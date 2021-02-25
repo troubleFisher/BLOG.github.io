@@ -162,6 +162,68 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/25/CSS%E4%BC%98%E5%85%88%E7%BA%A7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/profile.jpeg">
+      <meta itemprop="name" content="troubleFisher">
+      <meta itemprop="description" content="City of stars , Are you shining just for me?">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="troublefisher's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/02/25/CSS%E4%BC%98%E5%85%88%E7%BA%A7/" class="post-title-link" itemprop="url">CSS优先级</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2021-02-25 16:05:52 / Modified: 16:24:29" itemprop="dateCreated datePublished" datetime="2021-02-25T16:05:52+08:00">2021-02-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="CSS选择器优先级是怎样计算的？"><a href="#CSS选择器优先级是怎样计算的？" class="headerlink" title="CSS选择器优先级是怎样计算的？"></a>CSS选择器优先级是怎样计算的？</h2><p>!important &gt; 内联元素(style设置) &gt; id选择器 &gt; class选择器 = 伪类(:hover :active) = 属性选择器 &gt; 标签选择器 = 伪元素(::before ::after) &gt; 继承样式</p>
+<p>权重计算如下:<br>千位：如果声明在 style 的属性则该位得一分。<br>百位：选择器中包含ID选择器则该位得一分。<br>十位：选择器中包含类选择器、属性选择器或者伪类则该位得一分。<br>个位：选择器中包含标签选择器、伪元素选择器则该位得一分。<br>比如 #header p.content.active 得分为 0121。.header p.active::before 的权重是 0022。前者权重大于后者。</p>
+<p>注意：<br>权重相同，后者覆盖前者。<br>继承样式，父级样式 &gt; 祖父级样式。</p>
+<p><img src="/images/css-1.jpg"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/28/CSRF-and-XSS/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -395,7 +457,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -408,7 +470,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
